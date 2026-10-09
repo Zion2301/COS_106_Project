@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500"><defs><linearGradient id="h" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#4338ca"/></linearGradient></defs>
+<rect width="800" height="500" fill="#e2e8f0"/>
+<rect x="40" y="30" width="720" height="440" rx="14" fill="#fff"/>
+<rect x="40" y="30" width="720" height="36" rx="14" fill="#cbd5e1"/><rect x="40" y="52" width="720" height="14" fill="#cbd5e1"/>
+<circle cx="66" cy="48" r="7" fill="#ef4444"/><circle cx="88" cy="48" r="7" fill="#f59e0b"/><circle cx="110" cy="48" r="7" fill="#22c55e"/>
+<rect x="40" y="66" width="720" height="44" fill="#0f172a"/><rect x="60" y="77" width="22" height="22" rx="6" fill="#f59e0b"/>
+<g fill="#cbd5e1"><rect x="470" y="83" width="50" height="10" rx="5"/><rect x="535" y="83" width="50" height="10" rx="5"/><rect x="600" y="83" width="50" height="10" rx="5"/><rect x="665" y="83" width="70" height="10" rx="5" fill="#f59e0b"/></g>
+<rect x="40" y="110" width="720" height="200" fill="url(#h)"/>
+<rect x="80" y="150" width="300" height="26" rx="6" fill="#fff"/><rect x="80" y="188" width="240" height="26" rx="6" fill="#f59e0b"/>
+<rect x="80" y="230" width="280" height="10" rx="5" fill="#94a3b8"/><rect x="80" y="252" width="110" height="34" rx="17" fill="#f59e0b"/><rect x="200" y="252" width="110" height="34" rx="17" fill="none" stroke="#fff" stroke-width="2"/>
+<circle cx="610" cy="210" r="72" fill="#c7d2fe" stroke="#f59e0b" stroke-width="6"/><text x="610" y="226" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#3730a3" text-anchor="middle">ZO</text>
+<g fill="#fff" stroke="#e2e8f0"><rect x="70" y="335" width="200" height="110" rx="10"/><rect x="300" y="335" width="200" height="110" rx="10"/><rect x="530" y="335" width="200" height="110" rx="10"/></g>
+<g fill="#e0e7ff"><rect x="88" y="352" width="34" height="34" rx="8"/><rect x="318" y="352" width="34" height="34" rx="8"/><rect x="548" y="352" width="34" height="34" rx="8"/></g>
+<g fill="#cbd5e1"><rect x="88" y="400" width="140" height="10" rx="5"/><rect x="88" y="420" width="110" height="8" rx="4"/><rect x="318" y="400" width="140" height="10" rx="5"/><rect x="318" y="420" width="110" height="8" rx="4"/><rect x="548" y="400" width="140" height="10" rx="5"/><rect x="548" y="420" width="110" height="8" rx="4"/></g>
+</svg>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Zion Omogbeme Oshokhayame.">
+  <meta name="author" content="Zion Omogbeme Oshokhayame">
+  <title>Contact | Zion Omogbeme Oshokhayame</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/contact.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Site header + navigation (same on every page) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Zion Omogbeme, go to homepage">
+        <span class="logo-mark" aria-hidden="true">Z</span>
+        <span class="logo-text">Zion<span>.dev</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav id="primary-nav" class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Academic Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Page banner ===== -->
+    <section class="page-banner" aria-labelledby="page-title">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1 id="page-title">Let's talk</h1>
+        <p>Questions about my projects, an internship opportunity or feedback on Provara? Fill in the form and I'll get back to you.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="form-title">
+      <div class="container layout-with-aside">
+        <!-- ===== Contact form (validated by js/contact.js) ===== -->
+        <article class="surface-card">
+          <h2 id="form-title">Send me a message</h2>
+          <p class="hint form-intro">Fields marked <span class="required">*</span> are required.</p>
+
+          <!-- Success / error banner, filled in by contact.js -->
+          <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+
+          <!-- novalidate: the browser's built-in checks are off so JavaScript handles validation -->
+          <form id="contact-form" action="#" method="post" novalidate>
+            <div class="form-group">
+              <label for="name">Full name <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Ada Okafor" aria-describedby="name-error" required>
+              <span class="error-message" id="name-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email address <span class="required" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="e.g. ada@example.com" aria-describedby="email-error" required>
+              <span class="error-message" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone number <span class="required" aria-hidden="true">*</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="numeric" placeholder="e.g. 08012345678" aria-describedby="phone-hint phone-error" required>
+              <span class="hint" id="phone-hint">Digits only, no spaces, dashes or +.</span>
+              <span class="error-message" id="phone-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="6" placeholder="How can I help?" aria-describedby="message-error" required></textarea>
+              <span class="error-message" id="message-error"></span>
+            </div>
+
+            <div class="btn-group">
+              <button type="submit" id="submit-btn" class="btn btn-primary">Send Message</button>
+              <button type="reset" class="btn btn-outline">Clear Form</button>
+            </div>
+          </form>
+        </article>
+
+        <!-- ===== Contact details aside ===== -->
+        <aside aria-labelledby="details-title">
+          <section class="panel">
+            <h2 id="details-title">Contact details</h2>
+            <ul class="contact-list">
+              <li>
+                <span class="fact-icon" aria-hidden="true">✉️</span>
+                <div>
+                  <strong>Email</strong><br>
+                  <a href="mailto:z.omogbeme1269@miva.edu.ng">z.omogbeme1269@miva.edu.ng</a>
+                </div>
+              </li>
+              <li>
+                <span class="fact-icon" aria-hidden="true">🎓</span>
+                <div>
+                  <strong>University</strong><br>
+                  Miva Open University
+                </div>
+              </li>
+              <li>
+                <span class="fact-icon" aria-hidden="true">📍</span>
+                <div>
+                  <strong>Location</strong><br>
+                  Port Harcourt, Nigeria
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="panel">
+            <h2>Response time</h2>
+            <p>I usually reply within 1–2 working days.</p>
+          </section>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Site footer (same on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Zion Omogbeme Oshokhayame</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer-bottom">
+        &copy; <span id="year">2026</span> Zion Omogbeme Oshokhayame &middot; COS 106 Term Project, Miva Open University
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

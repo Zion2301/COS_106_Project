@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Zion Omogbeme Oshokhayame, Computer Science student at Miva Open University and founder of Provara.">
+  <meta name="author" content="Zion Omogbeme Oshokhayame">
+  <title>Home | Zion Omogbeme Oshokhayame</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <!-- Google Fonts: Poppins (headings) + Inter (body text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- One external stylesheet for the whole site -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Site header + navigation (same on every page) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Zion Omogbeme, go to homepage">
+        <span class="logo-mark" aria-hidden="true">Z</span>
+        <span class="logo-text">Zion<span>.dev</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav id="primary-nav" class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Academic Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero section: name, photo, welcome message, call-to-action ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-greeting">👋 Welcome to my portfolio</p>
+          <h1 id="hero-title">Hi, I'm <span>Zion Omogbeme Oshokhayame</span></h1>
+          <ul class="badge-row">
+            <li class="badge">BSc Computer Science</li>
+            <li class="badge">200 Level</li>
+            <li class="badge">Founder &amp; CEO, Provara</li>
+          </ul>
+          <p class="hero-tagline">
+            Computer Science student at Miva Open University and builder of real products.
+            I turn local problems into working apps that people actually use.
+          </p>
+          <div class="btn-group">
+            <a href="projects.html" class="btn btn-accent">View My Projects</a>
+            <a href="about.html" class="btn btn-ghost">About Me</a>
+            <a href="contact.html" class="btn btn-ghost">Get in Touch</a>
+          </div>
+        </div>
+
+        <figure class="hero-photo">
+          <img src="images/profile.jpg" alt="Portrait photograph of Zion Omogbeme Oshokhayame" width="320" height="320">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Brief biography + quick facts (aside) ===== -->
+    <section class="section" aria-labelledby="bio-title">
+      <div class="container layout-with-aside">
+        <article class="reveal">
+          <span class="eyebrow">Brief biography</span>
+          <h2 id="bio-title">A student who ships</h2>
+          <p>
+            I'm a Computer Science student at Miva Open University and the founder and CEO of
+            <strong>Provara</strong>, a booking marketplace that connects people in Port Harcourt
+            with barbers, hairstylists and nail technicians.
+          </p>
+          <p>
+            I built and launched the app on both iOS and Android while studying, and I enjoy turning
+            real local problems into working products. I'm driven by building things that people actually use.
+          </p>
+          <p>
+            This website is my COS 106 (Introduction to Web Technologies) term project. It brings together
+            my profile, my projects and a small academic planner I use to keep track of coursework.
+          </p>
+        </article>
+
+        <aside class="panel reveal" aria-labelledby="facts-title">
+          <h2 id="facts-title">Quick facts</h2>
+          <ul class="fact-list">
+            <li>
+              <span class="fact-icon" aria-hidden="true">🎓</span>
+              <div><strong>Studying</strong><span>BSc Computer Science, Miva Open University</span></div>
+            </li>
+            <li>
+              <span class="fact-icon" aria-hidden="true">🚀</span>
+              <div><strong>Building</strong><span>Provara, live on iOS &amp; Android</span></div>
+            </li>
+            <li>
+              <span class="fact-icon" aria-hidden="true">📍</span>
+              <div><strong>Based in</strong><span>Port Harcourt, Nigeria</span></div>
+            </li>
+            <li>
+              <span class="fact-icon" aria-hidden="true">💻</span>
+              <div><strong>Main stack</strong><span>JavaScript, React Native, Node.js, PostgreSQL</span></div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== Explore the site: cards linking to every page ===== -->
+    <section class="section section-alt" aria-labelledby="explore-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Explore</span>
+          <h2 id="explore-title">What you'll find here</h2>
+          <p>Each page of this site shows a different part of who I am and what I can build.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">🙋🏾‍♂️</div>
+            <h3>About Me</h3>
+            <p>My education, career goals, technical skills and the things I enjoy outside of code.</p>
+            <a href="about.html" class="card-link">Read my story</a>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">🛠️</div>
+            <h3>Projects</h3>
+            <p>Selected work, including Provara and the web projects I've built for my courses.</p>
+            <a href="projects.html" class="card-link">See my projects</a>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">🗓️</div>
+            <h3>Academic Planner</h3>
+            <p>An interactive task manager. Add, complete and delete tasks, and they are saved in your browser.</p>
+            <a href="planner.html" class="card-link">Open the planner</a>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">✉️</div>
+            <h3>Contact</h3>
+            <p>Have a question, an opportunity or feedback on Provara? Send me a message.</p>
+            <a href="contact.html" class="card-link">Contact me</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Call-to-action band ===== -->
+    <section class="section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2 id="cta-title">Let's build something useful together</h2>
+          <p>I'm open to internships, collaborations and conversations about tech in Africa.</p>
+          <div class="btn-group">
+            <a href="contact.html" class="btn btn-accent">Send a Message</a>
+            <a href="projects.html" class="btn btn-ghost">Browse Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Site footer (same on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Zion Omogbeme Oshokhayame</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer-bottom">
+        &copy; <span id="year">2026</span> Zion Omogbeme Oshokhayame &middot; COS 106 Term Project, Miva Open University
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

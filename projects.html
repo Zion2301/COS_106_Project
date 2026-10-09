@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Zion Omogbeme Oshokhayame, including Provara and COS 106 web projects.">
+  <meta name="author" content="Zion Omogbeme Oshokhayame">
+  <title>Projects | Zion Omogbeme Oshokhayame</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Site header + navigation (same on every page) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Zion Omogbeme, go to homepage">
+        <span class="logo-mark" aria-hidden="true">Z</span>
+        <span class="logo-text">Zion<span>.dev</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav id="primary-nav" class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Academic Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Page banner ===== -->
+    <section class="page-banner" aria-labelledby="page-title">
+      <div class="container">
+        <span class="eyebrow">Projects</span>
+        <h1 id="page-title">Things I've built</h1>
+        <p>From a live booking marketplace to the web projects I've made for my courses.</p>
+      </div>
+    </section>
+
+    <!-- ===== Project cards (laid out with CSS Grid) ===== -->
+    <section class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Selected work</span>
+          <h2 id="projects-title">Featured projects</h2>
+          <p>Each card shows what the project does, the tools I used and where to see it.</p>
+        </div>
+
+        <div class="project-grid">
+          <!-- Project 1 -->
+          <article class="card project-card reveal" id="provara">
+            <figure class="project-image">
+              <img src="images/project-provara.svg" alt="Screenshot of the Provara app showing a list of barbers and a booking button" width="800" height="500">
+            </figure>
+            <div class="project-body">
+              <span class="status-pill">Live on iOS &amp; Android</span>
+              <h3>Provara: Beauty Booking Marketplace</h3>
+              <p>
+                A mobile marketplace that connects people in Port Harcourt with barbers, hairstylists and
+                nail technicians. Customers can browse professionals, book appointments and pay in-app.
+              </p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>React Native</li>
+                <li>Expo</li>
+                <li>Node.js</li>
+                <li>Supabase</li>
+                <li>Paystack</li>
+              </ul>
+              <div class="btn-group">
+                <a href="contact.html" class="btn btn-primary btn-sm" aria-label="View Project: request a Provara demo on the contact page">View Project</a>
+                <a href="contact.html" class="btn btn-outline btn-sm" aria-label="Source code is private: ask for access on the contact page">Private Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card project-card reveal" id="portfolio">
+            <figure class="project-image">
+              <img src="images/project-portfolio.svg" alt="Screenshot of this portfolio website's homepage with hero section and navigation" width="800" height="500">
+            </figure>
+            <div class="project-body">
+              <span class="status-pill">COS 106 Term Project</span>
+              <h3>Student Portfolio Website</h3>
+              <p>
+                This responsive website, built with only HTML, CSS and JavaScript. It uses semantic HTML,
+                Flexbox, CSS Grid, media queries and animations, and is hosted on GitHub Pages.
+              </p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>GitHub Pages</li>
+              </ul>
+              <div class="btn-group">
+                <a href="index.html" class="btn btn-primary btn-sm">View Project</a>
+                <a href="https://github.com/YOUR-GITHUB-USERNAME/cos106-portfolio" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card project-card reveal" id="planner-project">
+            <figure class="project-image">
+              <img src="images/project-planner.svg" alt="Screenshot of the Academic Planner showing a task list with completed and pending tasks" width="800" height="500">
+            </figure>
+            <div class="project-body">
+              <span class="status-pill">Interactive</span>
+              <h3>Academic Planner</h3>
+              <p>
+                A JavaScript task manager for coursework. Tasks are stored in an array of objects, rendered
+                to the page dynamically, filtered by status and saved with localStorage.
+              </p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>JavaScript</li>
+                <li>DOM</li>
+                <li>localStorage</li>
+              </ul>
+              <div class="btn-group">
+                <a href="planner.html" class="btn btn-primary btn-sm">View Project</a>
+                <a href="https://github.com/YOUR-GITHUB-USERNAME/cos106-portfolio/blob/main/js/planner.js" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Source Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== What I learned + tools aside ===== -->
+    <section class="section section-alt" aria-labelledby="lessons-title">
+      <div class="container layout-with-aside">
+        <article class="reveal">
+          <span class="eyebrow">Reflection</span>
+          <h2 id="lessons-title">What these projects taught me</h2>
+          <ol>
+            <li>Start with a real problem. Provara exists because booking a barber in Port Harcourt was harder than it should be.</li>
+            <li>Ship early, then improve based on what users actually do.</li>
+            <li>Good structure (semantic HTML, reusable CSS, small JavaScript functions) makes code easier to maintain.</li>
+            <li>Design for phones first, because that is where most of my users are.</li>
+          </ol>
+        </article>
+
+        <aside class="panel reveal" aria-labelledby="tools-title">
+          <h2 id="tools-title">Tools I use</h2>
+          <ul class="chip-list">
+            <li>VS Code</li>
+            <li>Git &amp; GitHub</li>
+            <li>Expo</li>
+            <li>Supabase</li>
+            <li>Figma</li>
+            <li>Postman</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Site footer (same on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Zion Omogbeme Oshokhayame</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer-bottom">
+        &copy; <span id="year">2026</span> Zion Omogbeme Oshokhayame &middot; COS 106 Term Project, Miva Open University
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

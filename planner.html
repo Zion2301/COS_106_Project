@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic Planner: an interactive JavaScript task manager for coursework.">
+  <meta name="author" content="Zion Omogbeme Oshokhayame">
+  <title>Academic Planner | Zion Omogbeme Oshokhayame</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/planner.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Site header + navigation (same on every page) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Zion Omogbeme, go to homepage">
+        <span class="logo-mark" aria-hidden="true">Z</span>
+        <span class="logo-text">Zion<span>.dev</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav id="primary-nav" class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Academic Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Page banner ===== -->
+    <section class="page-banner" aria-labelledby="page-title">
+      <div class="container">
+        <span class="eyebrow">Academic planner</span>
+        <h1 id="page-title">Stay on top of your coursework</h1>
+        <p>Add tasks, tick them off when they're done and filter your list. Your tasks are saved in this browser, so they're still here when you come back.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="planner-title">
+      <div class="container layout-with-aside">
+        <!-- ===== Task manager ===== -->
+        <article class="surface-card">
+          <h2 id="planner-title">My tasks</h2>
+
+          <!-- Add-task form (handled by js/planner.js) -->
+          <form id="task-form" class="task-form" novalidate>
+            <div class="form-group form-group-title">
+              <label for="task-title">Task <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="task-title" name="title" maxlength="100" placeholder="e.g. Finish COS 106 assignment" aria-describedby="task-title-error" required>
+              <span class="error-message" id="task-title-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="task-course">Course code <span class="optional">(optional)</span></label>
+              <input type="text" id="task-course" name="course" maxlength="12" placeholder="e.g. COS 106">
+            </div>
+
+            <div class="form-group">
+              <label for="task-due">Due date <span class="optional">(optional)</span></label>
+              <input type="date" id="task-due" name="due">
+            </div>
+
+            <button type="submit" class="btn btn-primary">+ Add Task</button>
+          </form>
+
+          <!-- Live counter + filter buttons -->
+          <div class="task-summary">
+            <p id="task-counter" class="task-counter" aria-live="polite">0 of 0 tasks completed</p>
+            <div class="filter-group" role="group" aria-label="Filter tasks">
+              <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+              <button type="button" class="filter-btn" data-filter="active" aria-pressed="false">Active</button>
+              <button type="button" class="filter-btn" data-filter="completed" aria-pressed="false">Completed</button>
+            </div>
+          </div>
+
+          <div class="progress">
+            <progress id="task-progress" class="progress-bar" max="100" value="0" aria-label="Percentage of tasks completed">0%</progress>
+          </div>
+
+          <!-- Tasks are rendered here by renderTasks() in planner.js -->
+          <ul id="task-list" class="task-list" aria-label="Task list"></ul>
+          <p id="empty-state" class="empty-state">No tasks yet. Add your first task above.</p>
+
+          <div class="planner-footer">
+            <button type="button" id="clear-completed" class="link-btn">Clear completed tasks</button>
+          </div>
+        </article>
+
+        <!-- ===== Tips aside ===== -->
+        <aside aria-labelledby="tips-title">
+          <section class="panel">
+            <h2 id="tips-title">How to use the planner</h2>
+            <ol>
+              <li>Type a task, and optionally add a course code and due date.</li>
+              <li>Press <strong>Add Task</strong> or hit Enter.</li>
+              <li>Tick the checkbox to mark a task as completed.</li>
+              <li>Press 🗑 to delete a task.</li>
+              <li>Use the filters to show All, Active or Completed tasks.</li>
+            </ol>
+          </section>
+          <section class="panel">
+            <h2>Study tips</h2>
+            <ul>
+              <li>Break big assignments into small tasks.</li>
+              <li>Add due dates so overdue work is highlighted in red.</li>
+              <li>Review your list at the start of every study session.</li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Site footer (same on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Zion Omogbeme Oshokhayame</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer-bottom">
+        &copy; <span id="year">2026</span> Zion Omogbeme Oshokhayame &middot; COS 106 Term Project, Miva Open University
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="#eef2ff"/>
+<rect x="110" y="30" width="580" height="440" rx="20" fill="#fff" stroke="#e2e8f0"/>
+<g font-family="Arial, sans-serif">
+<text x="140" y="80" font-size="26" font-weight="700" fill="#0f172a">My tasks</text>
+<rect x="140" y="100" width="390" height="42" rx="8" fill="#fff" stroke="#cbd5e1" stroke-width="2"/><text x="155" y="127" font-size="15" fill="#94a3b8">Add a new task…</text>
+<rect x="545" y="100" width="115" height="42" rx="21" fill="#4338ca"/><text x="602" y="127" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">+ Add Task</text>
+<text x="140" y="178" font-size="15" font-weight="700" fill="#0f172a">2 of 4 tasks completed</text>
+<rect x="140" y="190" width="520" height="10" rx="5" fill="#e2e8f0"/><rect x="140" y="190" width="260" height="10" rx="5" fill="#15803d"/>
+<rect x="140" y="220" width="520" height="54" rx="8" fill="#f8fafc" stroke="#e2e8f0"/><rect x="140" y="220" width="5" height="54" fill="#15803d"/><rect x="160" y="236" width="22" height="22" rx="4" fill="#15803d"/><path d="M165 247 l5 5 l9 -10" stroke="#fff" stroke-width="3" fill="none"/>
+<text x="198" y="253" font-size="16" fill="#64748b" text-decoration="line-through">Read HTML chapter</text><line x1="198" y1="248" x2="352" y2="248" stroke="#64748b" stroke-width="2"/>
+<rect x="140" y="284" width="520" height="54" rx="8" fill="#f8fafc" stroke="#e2e8f0"/><rect x="140" y="284" width="5" height="54" fill="#15803d"/><rect x="160" y="300" width="22" height="22" rx="4" fill="#15803d"/><path d="M165 311 l5 5 l9 -10" stroke="#fff" stroke-width="3" fill="none"/>
+<text x="198" y="317" font-size="16" fill="#64748b">Practise CSS Grid</text><line x1="198" y1="312" x2="335" y2="312" stroke="#64748b" stroke-width="2"/>
+<rect x="140" y="348" width="520" height="54" rx="8" fill="#f8fafc" stroke="#e2e8f0"/><rect x="140" y="348" width="5" height="54" fill="#4338ca"/><rect x="160" y="364" width="22" height="22" rx="4" fill="#fff" stroke="#94a3b8" stroke-width="2"/>
+<text x="198" y="381" font-size="16" font-weight="700" fill="#0f172a">COS 106 term project</text><rect x="410" y="366" width="74" height="22" rx="6" fill="#e0e7ff"/><text x="447" y="382" font-size="12" font-weight="700" fill="#3730a3" text-anchor="middle">COS 106</text>
+<rect x="140" y="412" width="520" height="54" rx="8" fill="#f8fafc" stroke="#e2e8f0"/><rect x="140" y="412" width="5" height="54" fill="#b91c1c"/><rect x="160" y="428" width="22" height="22" rx="4" fill="#fff" stroke="#94a3b8" stroke-width="2"/>
+<text x="198" y="445" font-size="16" font-weight="700" fill="#0f172a">Maths assignment</text><rect x="370" y="430" width="90" height="22" rx="6" fill="#fee2e2"/><text x="415" y="446" font-size="12" font-weight="700" fill="#b91c1c" text-anchor="middle">Overdue</text>
+</g></svg>
