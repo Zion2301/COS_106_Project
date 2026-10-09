@@ -76,3 +76,4 @@ python3 -m http.server 8000
 - Fonts: [Google Fonts](https://fonts.google.com) (Poppins, Inter)
 - Sample video: CC0 "flower" clip from [MDN Web Docs](https://developer.mozilla.org) (placeholder)
 - Project images: SVG illustrations created for this project
+# COS_106_Project
